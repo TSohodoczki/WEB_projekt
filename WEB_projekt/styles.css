@@ -25,10 +25,53 @@ ul {
 
   body
   {
-background-image: url("hatter.jpg");
 background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
+background-size: 100%;
 background-color: lightslategrey;
-opacity: 0,1;
+color: white;
   }
+  .elso
+  {
+background-color: grey;
+border-radius: 2%;
+position: center;
+text-align: justify;
+font-size: large;
+  }
+  .masodik
+  {
+    background-color: grey;
+    border-radius: 2%;
+    position: center;
+    text-align: justify;
+    font-size: large;
+  }
+  
+  h1
+  {
+text-align: center;
+font-weight: 200;
+
+
+  }
+  .kepek
+  {
+   
+    border:3px solid black;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+    
+    
+  }
+
+  .fo
+{
+  background-color: grey;
+  border-radius: 2%;
+  position: center;
+  text-align: justify;
+  font-size: large;
+
+}
