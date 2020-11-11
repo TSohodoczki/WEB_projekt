@@ -18,19 +18,52 @@
     <h1>A vizsga részletei</h1>
     <p>Fontos tudni, hogy mindegyik vizsgarészen kötelező a pontok legalább 10 százalékát elérni, különben a vizsga elégtelen. 
       Ez azt jelenti, hogy a gyakorlati vizsgán legalább 12 pontot, míg a szóbelin vizsgán 3 pontot mindenképpen szerezni kell.
+      A vizsgákhoz megadott időt és a vizsgák pontozását a táblázatban találjátok.
       Lejjebb görgetve összesítheted elért pontjaidat!
     </p>
-    <img class="kepek" src="reszletek.PNG">
+    
+      <table class="form" style="width: auto;">
+        <thead>
+        <tr>
+          <th colsapn="2">Középszint</th>
+          <th colspan="2">Emeltszint</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gyakorlati vizsga</td>
+          <td>Szóbeli vizsga</td>
+          <td>Gyakorlati vizsga</td>
+          <td>Szóbeli vizsga</td>
+         </tr>
+         <tr>
+           <td>180 perc</td>
+           <td>15 perc</td>
+           <td>240 perc</td>
+           <td>20 perc</td>
+         </tr>
+         <tr>
+          <td>120 pont</td>
+          <td>30 pont</td>
+          <td>120 pont</td>
+          <td>30 pont</td>
+
+         </tr>
+        </tbody>
+      </table>
+  
+    
+
     <div class="media my-3 mb-5 tm-service-media tm-service-media-img-l">
       <br>
       
 
-<div class="media-body tm-service-text">
+<div class="form">
 <form>
 Gyakorlati pontok száma: <input type="text" name="num1" min="12" max="120"><br>
 Szóbeli pontok száma: <input type="text" name="num2" min="3" max="30"><br>
 Összesen: <input type="text" name="sum"><br>
-<input type="button" value="Összead" onclick="calcSum()">
+<input id="gomb" type="button" value="Összead" onclick="calcSum()">
 </form>
 
 <script>
@@ -40,9 +73,6 @@ let num2 = document.getElementsByName("num2")[0].value;
 let sum = Number(num1) + Number(num2);
 document.getElementsByName("sum")[0].value = sum;
 }
-
-
-
 </script>
 </div>
 </body>
