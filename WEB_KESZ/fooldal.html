@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Háttértárak</title>
+   
+</head>
+<body>
+  <ul>
+    <li><a href="fooldal.html">Főoldal</a></li>
+    <li><a href="1f.html">1.feladat</a></li>
+    <li><a href="2f.html">2.feladat</a></li>
+  </ul>
+<div class="fo">
+  <section class="tm-content">
+    <h1>A vizsga részletei</h1>
+    <p>Fontos tudni, hogy mindegyik vizsgarészen kötelező a pontok legalább 10 százalékát elérni, különben a vizsga elégtelen. 
+      Ez azt jelenti, hogy a gyakorlati vizsgán legalább 12 pontot, míg a szóbelin vizsgán 3 pontot mindenképpen szerezni kell.
+      A vizsgákhoz megadott időt és a vizsgák pontozását a táblázatban találjátok.
+      Lejjebb görgetve összesítheted elért pontjaidat!
+    </p>
+    
+      <table class="form" style="width: auto;">
+        <thead>
+        <tr>
+          
+          <th colspan="2">Középszint</th>
+            <td colspan="2">Emeltszint</td>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gyakorlati vizsga</td>
+          <td>Szóbeli vizsga</td>
+          <td>Gyakorlati vizsga</td>
+          <td>Szóbeli vizsga</td>
+         </tr>
+         <tr>
+           <td>180 perc</td>
+           <td>15 perc</td>
+           <td>240 perc</td>
+           <td>20 perc</td>
+         </tr>
+         <tr>
+          <td>120 pont</td>
+          <td>30 pont</td>
+          <td>120 pont</td>
+          <td>30 pont</td>
+
+         </tr>
+        </tbody>
+      </table>
+  
+    
+
+    
+      <br>
+      
+
+<div class="form">
+<form>
+Gyakorlati pontok száma: <input type="text" name="num1" min="12" max="120"><br>
+Szóbeli pontok száma: <input type="text" name="num2" min="3" max="30"><br>
+Összesen: <input type="text" name="sum"><br>
+<input class="gomb" type="button" value="Összead" onclick="calcSum()">
+</form>
+
+<script>
+function calcSum() {
+let num1 = document.getElementsByName("num1")[0].value;
+let num2 = document.getElementsByName("num2")[0].value;
+let sum = Number(num1) + Number(num2);
+document.getElementsByName("sum")[0].value = sum;
+}
+</script>
+</div>
+</body>
+</html>
